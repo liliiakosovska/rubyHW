@@ -4,7 +4,8 @@ class AccountsController < ApplicationController
   # GET /accounts
   # GET /accounts.json
   def index
-    @accounts = Account.all
+    @accounts = Account.order("age ASC")
+    
   end
 
   # GET /accounts/1
